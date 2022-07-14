@@ -6,6 +6,8 @@ def find_m(li_st):
     c = c.most_common()
     lis = []
     result = c[0][0]
+    if len(c) == 1:
+        return result
     if c[0][1] == c[1][1]:
         for i in range(len(li_st)):
             lis.append(c[i])
